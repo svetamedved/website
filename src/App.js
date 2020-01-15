@@ -5,6 +5,8 @@ import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 //Pages
 import Home from './components/Pages/Home';
 import About from './components/Pages/About';
+import Contact from './components/Pages/Contact';
+
 
 class App extends Component {
   render() {
@@ -16,30 +18,14 @@ class App extends Component {
             path="/"
             component={Home}
           />
-
-          <Route
-            path="/a"
-            render={() => {
-              return(
-                <h1>I am the /a Route</h1>
-                );
-            }}
-          />
-
-          <Route
-            path="/ab"
-            render={() => {
-              return(
-                <h1>I am the /ab Route</h1>
-                );
-            }}
-          />
-
           <Route
             path="/about"
             component={About}
           />
-
+          <Route
+            path="/contact"
+            component={Contact}
+          />
       </PageWrapper>
       </Router>
       );
